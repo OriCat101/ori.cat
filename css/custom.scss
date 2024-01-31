@@ -21,10 +21,10 @@ body {
 
 	.outline {
 		height: 80vh;
+		height: 65vh;
 		.text {
 			color: skyblue;
-			padding: 20px;
-			height: 65vh;
+			padding: 0 20px;
 			.social a{
 				padding: 20px;
 				img {
@@ -39,10 +39,10 @@ body {
 				}
 			}
 
-			.devider {
-				height: 5vh;
-				color: $nb-purple;
-			}
+		}
+		.devider {
+			height: 1vh;
+			color: $nb-purple;
 		}
 	}
 
@@ -52,7 +52,7 @@ body {
 
 	.nyan-cat {
 		width: 100%;
-		height: 10vh;
+		height: 20vh;
 	}
 }
 
@@ -61,4 +61,16 @@ body {
 	border-left: $nb-white 5px solid;
 	border-right: $nb-purple 5px solid;
 	border-bottom: $nb-black 5px solid;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.smol {
+	font-size: small;
+	font-style: italic;
+	font-weight: lighter;
+	color: $nb-yellow;
 }

@@ -16,11 +16,11 @@ body {
 }
 .container .outline {
   height: 80vh;
+  height: 65vh;
 }
 .container .outline .text {
   color: skyblue;
-  padding: 20px;
-  height: 65vh;
+  padding: 0 20px;
 }
 .container .outline .text .social a {
   padding: 20px;
@@ -36,8 +36,8 @@ body {
   border-right: #9c59d1 5px solid;
   border-bottom: #292929 5px solid;
 }
-.container .outline .text .devider {
-  height: 5vh;
+.container .outline .devider {
+  height: 1vh;
   color: #9c59d1;
 }
 .container .cat {
@@ -45,7 +45,7 @@ body {
 }
 .container .nyan-cat {
   width: 100%;
-  height: 10vh;
+  height: 20vh;
 }
 
 .enby-border {
@@ -53,4 +53,32 @@ body {
   border-left: #ffffff 5px solid;
   border-right: #9c59d1 5px solid;
   border-bottom: #292929 5px solid;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.smol {
+  font-size: small;
+  font-style: italic;
+  font-weight: lighter;
+  color: #fff433;
 }
