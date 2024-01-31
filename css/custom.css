@@ -36,6 +36,10 @@ body {
   border-right: #9c59d1 5px solid;
   border-bottom: #292929 5px solid;
 }
+.container .outline .text .devider {
+  height: 5vh;
+  color: #9c59d1;
+}
 .container .cat {
   height: 75px;
 }

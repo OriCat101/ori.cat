@@ -1,3 +1,8 @@
+$nb-yellow: #fff433;
+$nb-purple: #9c59d1;
+$nb-black: #292929;
+$nb-white: #ffffff;
+
 body {
 	// background-color: #000;
 	font-family: monospace;
@@ -26,12 +31,17 @@ body {
 					height: 75px;
 					transition: border 0.3s ease-in-out; 
 					&:hover {
-						border-top: #fff433 5px solid;
-						border-left: #ffffff 5px solid;
-						border-right: #9c59d1 5px solid;
-						border-bottom: #292929 5px solid;
+						border-top: $nb-yellow 5px solid;
+						border-left: $nb-white 5px solid;
+						border-right: $nb-purple 5px solid;
+						border-bottom: $nb-black 5px solid;
 					}
 				}
+			}
+
+			.devider {
+				height: 5vh;
+				color: $nb-purple;
 			}
 		}
 	}
@@ -47,8 +57,8 @@ body {
 }
 
 .enby-border {
-	border-top: #fff433 5px solid;
-	border-left: #ffffff 5px solid;
-	border-right: #9c59d1 5px solid;
-	border-bottom: #292929 5px solid;
+	border-top: $nb-yellow 5px solid;
+	border-left: $nb-white 5px solid;
+	border-right: $nb-purple 5px solid;
+	border-bottom: $nb-black 5px solid;
 }
