@@ -1,6 +1,6 @@
 body {
   font-family: monospace;
-  background-image: url(/images/ss035.gif);
+  background-image: url(/assets/images/ss035.gif);
   height: 100vh;
 }
 
@@ -46,6 +46,31 @@ body {
 .container .nyan-cat {
   width: 100%;
   height: 20vh;
+}
+.container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: #9c59d1 5px solid;
+}
+.container nav ul li {
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.container nav ul li a {
+  text-decoration: none;
+  color: #fff433;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+.container nav ul li a:hover {
+  color: #9c59d1;
 }
 
 .enby-border {

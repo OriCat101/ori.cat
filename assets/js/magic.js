@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			snailcat.style.animation = "spin 0.3s linear infinite";
 			alert("Hail To The Snailcat!");
 			setTimeout(() => {
-				window.location.href = "/snailcats%20basement/basement.html";
+				window.location.href = "/snailcats-lair/basement.html";
 			}, 3000);
 		}
 	}
