@@ -4,6 +4,10 @@ body {
   height: 100vh;
 }
 
+md-block:not([rendered]) {
+  display: none;
+}
+
 .container {
   width: 70%;
   height: 100%;
@@ -15,12 +19,13 @@ body {
   color: yellow;
 }
 .container .outline {
-  height: 80vh;
   height: 65vh;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .container .outline .text {
   color: skyblue;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 .container .outline .text .social a {
   padding: 20px;
@@ -35,6 +40,12 @@ body {
   border-left: #ffffff 5px solid;
   border-right: #9c59d1 5px solid;
   border-bottom: #292929 5px solid;
+}
+.container .outline .md-text {
+  color: skyblue;
+  display: block;
+  border-bottom: dashed 3px #9c59d1;
+  padding: 0 20px;
 }
 .container .outline .devider {
   height: 1vh;
