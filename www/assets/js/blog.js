@@ -1,15 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
   let blogArticles = {
-    Technology: {
+    technology: {
       1: "About this website",
       2: "md block test"
     },
-    Stuff: {}
+    stuff: {}
   };
 
+  /**
+   * The element that contains the blog links.
+   * @type {HTMLElement}
+   */
   let blogLinks = document.getElementById('blogLinks');
 
-  function getArticles(blogLinksElement, topic) {
+  /**
+   * The element that displays the blog title.
+   * @type {HTMLElement}
+   */
+  let blogTitle = document.getElementById('blogTitle');
+
+  /**
+   * Lists all articles in the specified topic.
+   * @param {HTMLElement} blogLinksElement - The element that contains the blog links.
+   * @param {string} topic - The topic of the articles to be listed.
+   * @param {HTMLElement} blogTitle - The element that displays the blog title.
+   */
+  function getArticles(blogLinksElement, topic, blogTitle) {
     if (blogLinksElement) {
       for (let key in blogArticles[topic]) {
         let article = document.createElement('article');
@@ -25,12 +41,20 @@ document.addEventListener('DOMContentLoaded', function () {
         article.appendChild(mdBlock);
         blogLinksElement.appendChild(article);
       }
+
+      blogTitle.textContent += `${topic}`;
     } else {
       console.error('Element with ID "blogLinks" not found.');
     }
   }
 
-  function listAllTopicsAsLinks(blogLinksElement, topics) {
+  /**
+   * Lists all topics as links.
+   * @param {HTMLElement} blogLinksElement - The element that contains the blog links.
+   * @param {object} topics - An object that stores the topics.
+   * @param {HTMLElement} blogTitle - The element that displays the blog title.
+   */
+  function listAllTopicsAsLinks(blogLinksElement, topics, blogTitle) {
     if (blogLinksElement) {
       for (let key in topics) {
         let topic = topics[key];
@@ -44,21 +68,26 @@ document.addEventListener('DOMContentLoaded', function () {
         article.appendChild(h2);
         blogLinksElement.appendChild(article);
       }
+
+      blogTitle.textContent = "Topics";
     } else {
       console.error('Element with ID "blogLinks" not found.');
     }
   }
 
+  /**
+   * The main function that handles the logic for displaying articles or topics based on the URL parameters.
+   */
   function main() {
     const urlParams = new URLSearchParams(window.location.search);
     const topic = urlParams.get('topic');
 
     // Check if a topic is specified in the URL
     if (topic) {
-      getArticles(blogLinks, topic);
+      getArticles(blogLinks, urlParams.get('topic'), blogTitle);
     } else {
       console.log('No topic specified in URL.');
-      listAllTopicsAsLinks(blogLinks, blogArticles);
+      listAllTopicsAsLinks(blogLinks, blogArticles, blogTitle);
     }
   }
 
