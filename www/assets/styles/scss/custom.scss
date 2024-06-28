@@ -47,14 +47,40 @@ md-block:not([rendered]) {
           }
         }
       }
-
     }
 
-    .md-text {
-      color: skyblue;
-      display: block;
-      border-bottom: dashed 3px $nb-purple;
-      padding: 0 20px;
+    article.home {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    #gravatar {
+      background-image: url("https://0.gravatar.com/avatar/64a83766c4e2a7c7ef1f954fe804364b?s=500");
+      height: 200px;
+      aspect-ratio: 1/1;
+      background-position: center;
+      background-size: cover;
+      padding: 0;
+      margin: 20px;
+    }
+
+    article {
+      h2,
+      a {
+        color: $nb-yellow !important;
+        // font-size: 2em;
+      }
+
+      .md-text {
+        color: skyblue;
+        display: block;
+        border-bottom: dashed 3px $nb-purple;
+      }
+
+      * {
+        padding: 0 20px;
+      }
     }
 
     .devider {

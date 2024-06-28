@@ -41,10 +41,37 @@ md-block:not([rendered]) {
   border-right: #9c59d1 5px solid;
   border-bottom: #292929 5px solid;
 }
-.container .outline .md-text {
+.container .outline article.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .outline #gravatar {
+  background-image: url("https://0.gravatar.com/avatar/64a83766c4e2a7c7ef1f954fe804364b?s=500");
+  height: 200px;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  margin: 20px;
+}
+.container .outline article h2,
+.container .outline article a {
+  color: #fff433 !important;
+}
+.container .outline article .md-text {
   color: skyblue;
   display: block;
   border-bottom: dashed 3px #9c59d1;
+}
+.container .outline article * {
   padding: 0 20px;
 }
 .container .outline .devider {
