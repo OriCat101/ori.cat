@@ -1,8 +1,6 @@
 body {
   font-family: monospace;
-  background-image: url(../../images/ss035.gif);
   background-image: url(/assets/images/ss035.gif);
-  height: 100vh;
 }
 @media screen and (max-width: 1024px) {
   body {
@@ -33,10 +31,20 @@ md-block:not([rendered]) {
   padding-left: 15%;
   color: yellow;
 }
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+}
 .container .outline {
   height: 80vh;
   overflow: hidden;
   overflow-y: auto;
+}
+@media screen and (max-width: 1024px) {
+  .container .outline {
+    height: 110vh;
+  }
 }
 .container .outline .text {
   color: skyblue;

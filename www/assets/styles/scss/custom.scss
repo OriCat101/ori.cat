@@ -11,9 +11,8 @@ $desktop: 1200px;
 body {
   // background-color: #000;
   font-family: monospace;
-  background-image: url(../../images/ss035.gif);
   background-image: url(/assets/images/ss035.gif);
-  height: 100vh;
+  // height: 100vh;
 
   @media screen and (max-width: $tablet) {
     font-size: 2.2em;
@@ -40,6 +39,10 @@ md-block:not([rendered]) {
   width: 70%;
   height: 100%;
 
+  @media screen and (max-width: $tablet) {
+    width: 95%;
+  }
+
   height: max-content;
   padding-right: 15%;
   padding-left: 15%;
@@ -49,6 +52,10 @@ md-block:not([rendered]) {
     height: 80vh;
     overflow: hidden;
     overflow-y: auto;
+
+    @media screen and (max-width: $tablet) {
+      height: 110vh;
+    }
 
     .text {
       color: skyblue;
