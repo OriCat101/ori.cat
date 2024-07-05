@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const topic = urlParams.get('topic');
     const article = urlParams.get('article');
 
-    // Check if a topic is specified in the URL
+    // Check if a topic or article is specified in the URL
     if (topic && article) {
       loadFullArticle(topic, article, blogLinks, blogTitle);
     } else if (topic) {
