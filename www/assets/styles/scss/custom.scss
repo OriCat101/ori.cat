@@ -16,6 +16,18 @@ body {
 
   @media screen and (max-width: $tablet) {
     font-size: 2.2em;
+
+    p {
+      font-size: 1.7em;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 2.5em;
+    }
   }
 }
 
@@ -33,13 +45,17 @@ md-block:not([rendered]) {
   color: yellow;
 
   .outline {
-    height: 65vh;
+    height: 80vh;
     overflow: hidden;
     overflow-y: auto;
 
     .text {
       color: skyblue;
       padding: 20px 20px;
+
+      @media screen and (max-width: $tablet) {
+        margin: 0;
+      }
 
       .social a {
         padding: 20px;
@@ -54,6 +70,7 @@ md-block:not([rendered]) {
             border-right: $nb-purple 5px solid;
             border-bottom: $nb-black 5px solid;
           }
+
         }
       }
     }
@@ -62,9 +79,12 @@ md-block:not([rendered]) {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+
+      @media screen and (max-width: $tablet) {
+        flex-direction: column;
+      }
     }
 
-    @media screen and (min-width: $tablet) {
       #gravatar {
         background-image: url("https://0.gravatar.com/avatar/64a83766c4e2a7c7ef1f954fe804364b?s=500");
         height: 200px;
@@ -74,7 +94,7 @@ md-block:not([rendered]) {
         padding: 0;
         margin: 20px;
       }
-    }
+    
 
     article {
       h2,
@@ -94,6 +114,9 @@ md-block:not([rendered]) {
         text-decoration: underline;
         border-bottom: dashed 3px $nb-purple;
         padding: 20px 0 20px 20px;
+        @media screen and (max-width: $tablet) {
+          font-size: 1.7em;
+        }
       }
 
       .md-text {
@@ -102,7 +125,12 @@ md-block:not([rendered]) {
         max-height: 100px;
         overflow: hidden;
 
+        @media screen and (max-width: $tablet) {
+          display: none;
+        }
+
         &#full-article {
+          display: block;
           max-height: none;
           overflow: visible;
         }
@@ -124,10 +152,31 @@ md-block:not([rendered]) {
       height: 1vh;
       color: $nb-purple;
     }
+
+    #blogTitleLink {
+      font-size: unset;
+      #blogTitle {
+        @media screen and (max-width: $tablet) {
+          font-size: 3em;
+        }
+        margin-top: 0;
+      }
+    }
   }
 
-  .cat {
-    height: 75px;
+  > a {
+    .cat {
+      height: 75px;
+    }
+  
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      
+      .cat {
+        height: 150px;
+      }
+    }
   }
 
   .nyan-cat {
@@ -153,6 +202,10 @@ md-block:not([rendered]) {
           text-decoration: none;
           color: $nb-yellow;
           transition: color 0.5s ease-in-out;
+
+          @media screen and (max-width: $tablet) {
+            font-size: 1.69em;
+          }
 
           &:hover {
             color: $nb-purple;
@@ -185,4 +238,8 @@ md-block:not([rendered]) {
   font-style: italic;
   font-weight: lighter;
   color: $nb-yellow;
+}
+
+code {
+  color: #ffaec9;
 }
