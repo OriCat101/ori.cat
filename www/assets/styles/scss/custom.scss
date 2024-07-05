@@ -79,15 +79,35 @@ md-block:not([rendered]) {
     article {
       h2,
       a {
-        color: skyblue !important;
+        color: skyblue ;
         // font-size: 2em;
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      a.read-more {
+        display: block;
+        width: 100%;
+        color: $nb-yellow;
+        text-decoration: underline;
+        border-bottom: dashed 3px $nb-purple;
+        padding: 20px 0 20px 20px;
       }
 
       .md-text {
         color: skyblue;
         display: block;
-        border-bottom: dashed 3px $nb-purple;
+        max-height: 100px;
+        overflow: hidden;
+
+        &#full-article {
+          max-height: none;
+          overflow: visible;
+        }
       }
+      
 
       * {
         padding: 0 20px;

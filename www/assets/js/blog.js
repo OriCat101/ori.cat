@@ -31,18 +31,52 @@ document.addEventListener('DOMContentLoaded', function () {
         let article = document.createElement('article');
         let h2 = document.createElement('h2');
         let mdBlock = document.createElement('md-block');
+        let readMoreLink = document.createElement('a');
 
-        h2.textContent = blogArticles[key];
+        h2.textContent = blogArticles[topic][key];
         mdBlock.setAttribute('class', 'md-text');
         mdBlock.setAttribute('src', `/blog/${topic}/${key}.md`);
         mdBlock.textContent = 'Ori fucked up';
 
+        readMoreLink.textContent = 'Read More';
+        readMoreLink.setAttribute('href', `/blog.html?article=${key}&topic=${topic}`);
+        readMoreLink.setAttribute('class', 'read-more')
+
         article.appendChild(h2);
         article.appendChild(mdBlock);
+        article.appendChild(readMoreLink);
         blogLinksElement.appendChild(article);
       }
 
       blogTitle.textContent += `${topic}`;
+    } else {
+      console.error('Element with ID "blogLinks" not found.');
+    }
+  }
+
+  /**
+   * Loads the full article content for a given topic and article ID.
+   *
+   * @param {string} topic - The topic of the article.
+   * @param {string} articleID - The ID of the article.
+   * @param {HTMLElement} blogLinksElement - The element where the full article will be appended.
+   * @param {HTMLElement} blogTitle - The element representing the blog title.
+   */
+  function loadFullArticle(topic, articleID, blogLinksElement, blogTitle) {
+    if (blogLinksElement) {
+      let article = document.createElement('article');
+      let mdBlock = document.createElement('md-block');
+
+      blogTitle.textContent += blogArticles[topic][articleID];
+      blogTitle.parentElement.setAttribute('href', `/blog.html?topic=${topic}`);
+
+      mdBlock.setAttribute('class', 'md-text');
+      mdBlock.setAttribute('id', 'full-article');
+      mdBlock.setAttribute('src', `/blog/${topic}/${articleID}.md`);
+      mdBlock.textContent = 'Ori fucked up';
+
+      article.appendChild(mdBlock);
+      blogLinksElement.appendChild(article);
     } else {
       console.error('Element with ID "blogLinks" not found.');
     }
@@ -81,9 +115,12 @@ document.addEventListener('DOMContentLoaded', function () {
   function main() {
     const urlParams = new URLSearchParams(window.location.search);
     const topic = urlParams.get('topic');
+    const article = urlParams.get('article');
 
     // Check if a topic is specified in the URL
-    if (topic) {
+    if (topic && article) {
+      loadFullArticle(topic, article, blogLinks, blogTitle);
+    } else if (topic) {
       getArticles(blogLinks, urlParams.get('topic'), blogTitle);
     } else {
       console.log('No topic specified in URL.');

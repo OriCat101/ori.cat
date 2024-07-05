@@ -71,12 +71,28 @@ md-block:not([rendered]) {
 }
 .container .outline article h2,
 .container .outline article a {
-  color: skyblue !important;
+  color: skyblue;
+}
+.container .outline article h2 {
+  margin-bottom: 0;
+}
+.container .outline article a.read-more {
+  display: block;
+  width: 100%;
+  color: #fff433;
+  text-decoration: underline;
+  border-bottom: dashed 3px #9c59d1;
+  padding: 20px 0 20px 20px;
 }
 .container .outline article .md-text {
   color: skyblue;
   display: block;
-  border-bottom: dashed 3px #9c59d1;
+  max-height: 100px;
+  overflow: hidden;
+}
+.container .outline article .md-text#full-article {
+  max-height: none;
+  overflow: visible;
 }
 .container .outline article * {
   padding: 0 20px;
