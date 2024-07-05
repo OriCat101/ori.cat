@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
       let mdBlock = document.createElement('md-block');
 
       blogTitle.textContent += blogArticles[topic][articleID];
-      blogTitle.parentElement.setAttribute('href', `/blog.html?topic=${topic}`);
+      blogTitle.parentElement.setAttribute('href', `./blog.html?topic=${topic}`);
 
       mdBlock.setAttribute('class', 'md-text');
       mdBlock.setAttribute('id', 'full-article');

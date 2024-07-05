@@ -1,6 +1,6 @@
 body {
   font-family: monospace;
-  background-image: url(assets/images/ss035.gif);
+  background-image: url(./assets/images/ss035.gif);
   height: 100vh;
 }
 @media screen and (max-width: 1024px) {
