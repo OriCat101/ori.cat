@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         h2.textContent = blogArticles[topic][key];
         mdBlock.setAttribute('class', 'md-text');
-        mdBlock.setAttribute('src', `/blog/${topic}/${key}.md`);
+        mdBlock.setAttribute('src', `./blog/${topic}/${key}.md`);
         mdBlock.textContent = 'Ori fucked up';
 
         readMoreLink.textContent = 'Read More';
-        readMoreLink.setAttribute('href', `/blog.html?article=${key}&topic=${topic}`);
+        readMoreLink.setAttribute('href', `./blog.html?article=${key}&topic=${topic}`);
         readMoreLink.setAttribute('class', 'read-more')
 
         article.appendChild(h2);
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       mdBlock.setAttribute('class', 'md-text');
       mdBlock.setAttribute('id', 'full-article');
-      mdBlock.setAttribute('src', `/blog/${topic}/${articleID}.md`);
+      mdBlock.setAttribute('src', `./blog/${topic}/${articleID}.md`);
       mdBlock.textContent = 'Ori fucked up';
 
       article.appendChild(mdBlock);
