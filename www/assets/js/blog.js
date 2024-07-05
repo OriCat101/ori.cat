@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         article.appendChild(mdBlock);
         article.appendChild(readMoreLink);
         blogLinksElement.appendChild(article);
+        document.title = topic;
       }
 
       blogTitle.textContent += `${topic}`;
@@ -77,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       article.appendChild(mdBlock);
       blogLinksElement.appendChild(article);
+      document.title = blogArticles[topic][articleID];
     } else {
       console.error('Element with ID "blogLinks" not found.');
     }
