@@ -96,6 +96,17 @@ md-block:not([rendered]) {
   padding: 0;
   margin: 20px;
 }
+.container .outline #mobile-disclamer {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .container .outline #mobile-disclamer {
+    display: block;
+    font-size: 0.7em;
+    color: #9c59d1;
+    padding: 20px;
+  }
+}
 .container .outline article h2,
 .container .outline article a {
   color: skyblue;
