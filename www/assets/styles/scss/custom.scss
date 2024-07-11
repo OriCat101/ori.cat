@@ -12,7 +12,8 @@ body {
   background-color: #000;
   font-family: monospace;
   background-image: url(/assets/images/ss035.gif);
-  // height: 100vh;
+  height: 100vh;
+  overflow-x: hidden;
 
   @media screen and (max-width: $tablet) {
     font-size: 2.2em;
@@ -47,17 +48,17 @@ md-block:not([rendered]) {
 
   height: max-content;
   padding-right: 15vw;
-  padding-left: 8vw;
+  padding-left: 15vw;
   color: yellow;
+
+  @media screen and (max-width: $tablet) {
+    padding-left: 8vw;
+  }
 
   .outline {
     height: 80vh;
     overflow: hidden;
     overflow-y: auto;
-
-    // @media screen and (max-width: $tablet) {
-    //   height: 110vh;
-    // }
 
     .text {
       color: skyblue;
