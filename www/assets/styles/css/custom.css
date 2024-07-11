@@ -1,20 +1,22 @@
 body {
+  background-color: #000;
   font-family: monospace;
   background-image: url(/assets/images/ss035.gif);
-  height: 100vh;
 }
 @media screen and (max-width: 1024px) {
   body {
     font-size: 2.2em;
   }
-  body p {
-    font-size: 1.7em;
+  body p,
+  body ul,
+  body pre {
+    font-size: 0.7em;
   }
   body h1 {
-    font-size: 3em;
+    font-size: 1.7em;
   }
   body h2 {
-    font-size: 2.5em;
+    font-size: 1.2em;
   }
 }
 
@@ -28,24 +30,19 @@ md-block:not([rendered]) {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding-right: 15%;
-  padding-left: 15%;
+  padding-right: 15vw;
+  padding-left: 8vw;
   color: yellow;
 }
 @media screen and (max-width: 1024px) {
   .container {
-    width: 95%;
+    width: 80vw;
   }
 }
 .container .outline {
   height: 80vh;
   overflow: hidden;
   overflow-y: auto;
-}
-@media screen and (max-width: 1024px) {
-  .container .outline {
-    height: 110vh;
-  }
 }
 .container .outline .text {
   color: skyblue;
@@ -113,11 +110,7 @@ md-block:not([rendered]) {
   text-decoration: underline;
   border-bottom: dashed 3px #9c59d1;
   padding: 20px 0 20px 20px;
-}
-@media screen and (max-width: 1024px) {
-  .container .outline article a.read-more {
-    font-size: 1.7em;
-  }
+  font-size: 0.7em;
 }
 .container .outline article .md-text {
   color: skyblue;
@@ -141,7 +134,7 @@ md-block:not([rendered]) {
 .container .outline a,
 .container .outline h1#blogTitle {
   color: #fff433;
-  padding-left: 20px;
+  padding-left: 20px !important;
   text-decoration: none;
 }
 .container .outline .devider {
@@ -154,11 +147,6 @@ md-block:not([rendered]) {
 .container .outline #blogTitleLink #blogTitle {
   margin-top: 0;
 }
-@media screen and (max-width: 1024px) {
-  .container .outline #blogTitleLink #blogTitle {
-    font-size: 3em;
-  }
-}
 .container > a .cat {
   height: 75px;
 }
@@ -170,9 +158,6 @@ md-block:not([rendered]) {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .container > a .cat {
-    height: 150px;
   }
 }
 .container .nyan-cat {
@@ -196,6 +181,7 @@ md-block:not([rendered]) {
   font-weight: bold;
 }
 .container nav ul li a {
+  padding: 0 !important;
   text-decoration: none;
   color: #fff433;
   -webkit-transition: color 0.5s ease-in-out;
@@ -203,7 +189,7 @@ md-block:not([rendered]) {
 }
 @media screen and (max-width: 1024px) {
   .container nav ul li a {
-    font-size: 1.69em;
+    font-size: 0.8em;
   }
 }
 .container nav ul li a:hover {
@@ -247,4 +233,8 @@ md-block:not([rendered]) {
 
 code {
   color: #ffaec9;
+}
+
+.home-title {
+  margin-top: 0px;
 }
