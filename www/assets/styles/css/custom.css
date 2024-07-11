@@ -145,6 +145,7 @@ md-block:not([rendered]) {
   display: block;
   max-height: none;
   overflow: visible;
+  padding-left: 20px;
 }
 .container .outline article .md-text#full-article * {
   padding: 0 !important;

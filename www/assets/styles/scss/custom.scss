@@ -158,6 +158,7 @@ md-block:not([rendered]) {
           display: block;
           max-height: none;
           overflow: visible;
+          padding-left: 20px;
 
           * {
             padding: 0 !important;
