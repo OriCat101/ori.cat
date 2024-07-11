@@ -3,7 +3,7 @@ body {
   font-family: monospace;
   background-image: url(/assets/images/ss035.gif);
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   body {
@@ -145,6 +145,9 @@ md-block:not([rendered]) {
   display: block;
   max-height: none;
   overflow: visible;
+}
+.container .outline article .md-text#full-article * {
+  padding: 0 !important;
 }
 .container .outline article * {
   padding: 0 20px;
