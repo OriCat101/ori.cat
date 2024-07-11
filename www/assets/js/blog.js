@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
   let blogArticles = {
     technology: {
       1: "About this website",
-      2: "md block test"
+      2: "md block test",
+      3: "upgrade mura 7.1 to masa"
     },
     stuff: {}
   };
