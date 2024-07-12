@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2024-07-12T09:07:22.681Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="594LD2NmNLewspkg7YMx" version="24.6.5" type="device">
+  <diagram name="Page-1" id="5nk_1cx6yC_39FxN6tSx">
+    <mxGraphModel dx="1103" dy="742" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5Fb1AA020ga74dTDoMzi-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5Fb1AA020ga74dTDoMzi-1" target="5Fb1AA020ga74dTDoMzi-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5Fb1AA020ga74dTDoMzi-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5Fb1AA020ga74dTDoMzi-1" target="5Fb1AA020ga74dTDoMzi-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5Fb1AA020ga74dTDoMzi-1" value="Home" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5Fb1AA020ga74dTDoMzi-2" value="EasterEgg" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5Fb1AA020ga74dTDoMzi-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5Fb1AA020ga74dTDoMzi-4" target="5Fb1AA020ga74dTDoMzi-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5Fb1AA020ga74dTDoMzi-4" value="Blog topics" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="528" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5Fb1AA020ga74dTDoMzi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5Fb1AA020ga74dTDoMzi-6" target="5Fb1AA020ga74dTDoMzi-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5Fb1AA020ga74dTDoMzi-6" value="Article list" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="528" y="457" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5Fb1AA020ga74dTDoMzi-8" value="full Article Vie" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="528" y="568" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
