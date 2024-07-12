@@ -13,3 +13,4 @@ Also, I develop corporate websites at my job so I wanned to do something differe
 - a [custom "CMS"](https://github.com/OriCat101/ori.cat/blob/main/www/assets/js/blog.js) made in JavaScript
 - SCSS
 - Avatar image using [Gravatar](https://gravatar.com/) 
+- Automatic website deployment using GitHub workflows
