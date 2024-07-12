@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     stuff: {
       1: "Exponential Functions",
       2: "Holy drink ratings",
-      3: "DIY MtF HRT"
+      3: "DIY MtF HRT by nerotard"
     },
     gaming: {
       1: "SNES"
