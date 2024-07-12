@@ -14,3 +14,8 @@ Also, I develop corporate websites at my job so I wanned to do something differe
 - SCSS
 - Avatar image using [Gravatar](https://gravatar.com/) 
 - Automatic website deployment using GitHub workflows
+
+## Design choices
+- No ontact form since I'm planning on actually leaving this website up and mentaining it
+- No images or videos in contents
+- no comments beacause they don't really fit the Web 1.0 philosophy
