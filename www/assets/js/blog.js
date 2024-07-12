@@ -3,9 +3,19 @@ document.addEventListener('DOMContentLoaded', function () {
     technology: {
       1: "About this website",
       2: "md block test",
-      3: "upgrade mura 7.1 to masa"
+      3: "upgrade mura 7.1 to masa",
+      4: "call cfc from ajax",
+      5: "Network Audio Player",
+      6: "NGINX Reverse Proxy for lucee",
     },
-    stuff: {}
+    stuff: {
+      1: "Exponential Functions",
+      2: "Holy drink ratings",
+      3: "DIY MtF HRT"
+    },
+    gaming: {
+      1: "SNES"
+    }
   };
 
   /**
